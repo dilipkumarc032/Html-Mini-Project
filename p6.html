@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      form {
+        background-color: aliceblue;
+      }
+      button {
+        border-radius: 6px;
+        border: none;
+        background-color: rgb(13, 243, 239);
+        margin-top: 10px;
+      }
+      input {
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <!-- at action use an url where the  -->
+      <h1>Course Registration Form</h1>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fn">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="fn"
+                id="fn"
+                maxlength="20"
+                placeholder="Ex:Adthiya"
+                required
+              />
+              <!-- for ,name,id ust hav same data it will be used for backend . and here required is used to take input compulsourally like if we odnt enter name it shows warnint to enter -->
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td><input type="text" placeholder="Ex:Roy" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile No</label></td>
+            <td><input type="tel" placeholder="Ex:98829 93994" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td><input type="email" placeholder="Ex:hcv@gmail.com" /></td>
+          </tr>
+          <tr>
+            <td><label for="">password</label></td>
+            <td><input type="password" maxlength="5" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm password</label></td>
+            <td><input type="password" maxlength="5" /></td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" value="male" />male
+              <input type="radio" name="Gender" value="female" />female
+              <input type="radio" name="Gender" value="others" />others
+              <!-- here name and valu is for backend and to select on;y one there fore use all name same  -->
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="china">China</option>
+                <option value="russia">Russia</option>
+                <!-- here also value is use for bcknd  -->
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload File</label></td>
+            <td><input type="file" name="pic" id="pic" /></td>
+          </tr>
+          <td>
+            <button type="reset">Click here to reset</button>
+          </td>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <label for="">Select Course</label>
+        <select name="course" id="course">
+          <option value="python">python full stack</option>
+          <option value="java">java full stack</option></select
+        ><br />
+        <label for="">Mode</label>
+        <input type="radio" name="mode" value="online" />online
+        <input type="radio" name="mode" value="offline" />offline<br />
+        <label for="">comment</label> <br />
+        <textarea
+          style="resize: none"
+          name=""
+          id=""
+          rows="6"
+          cols="26"
+        ></textarea
+        ><br />
+        <button type="submit">click here to submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
